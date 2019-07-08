@@ -11,5 +11,12 @@ let mix = require('laravel-mix');
  |
  */
 
+let config = require('./webpack.config');
+mix.webpackConfig(config);
+
+
 mix.js('resources/assets/js/app.js', 'public/js')
    .sass('resources/assets/sass/app.scss', 'public/css');
+
+
+mix.js('resources/assets/js/dcount.js', 'public/js/dcount.js');
