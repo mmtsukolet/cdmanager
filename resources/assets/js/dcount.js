@@ -6,6 +6,8 @@ window.Vue = require('vue');
 // child components
 import Vue from "vue";
 
+import ContentPage from './components/ContentPage'
+
 
 // usages
 
@@ -13,6 +15,7 @@ import Vue from "vue";
 
 
 // components
+Vue.component('content-page', ContentPage);
 
 
 new Vue({

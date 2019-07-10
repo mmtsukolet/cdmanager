@@ -176,6 +176,7 @@ class CounterController extends Controller
      */
     public function getPage($id)
     {
-        # code...
+
+
     }
 }
