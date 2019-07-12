@@ -12,9 +12,9 @@
 */
 
 
-/*Route::get('/',function (){
+Route::get('/',function (){
     return view('welcome');
-});*/
+});
 
 Route::group(['middleware' => ['auth', 'roles'],'roles' => ['admin','user']], function () {
     Route::get('/dashboard', function () {

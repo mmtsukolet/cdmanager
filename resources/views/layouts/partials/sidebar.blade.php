@@ -73,10 +73,6 @@
                         {{--<li><a class="waves-effect" href="{{asset('permission-management')}}"> <i--}}
                         {{--class="icon-list fa-fw"></i><span class="hide-menu"> Permissions</span></a></li>--}}
 
-                        <li><a class="waves-effect" href="{{asset('crud-generator')}}">
-                                <i class="icon-drawar fa-fw"></i><span class="hide-menu"> CRUD Generator</span></a>
-                        </li>
-
                     @endif
                     @foreach($laravelAdminMenus->menus as $section)
                         @if(count(collect($section->items)) > 0)
